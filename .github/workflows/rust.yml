@@ -22,7 +22,7 @@ jobs:
       if: ${{ matrix.os == 'ubuntu-latest' }} 
       run: sudo apt install intel-opencl-icd 
     - name: Intall OpenCL POCL for Ubuntu
-      if: ${{ matrix.os == "ubuntu-latest" }}
+      if: ${{ matrix.os == 'ubuntu-latest' }}
       run: sudo apt install pocl-opencl-icd
     - name: Build 
       run: cargo build -vv
