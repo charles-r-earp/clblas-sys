@@ -19,11 +19,7 @@ jobs:
       with: 
         submodules: recursive
     - name: Install OpenCL
-      run: sudo apt install pocl-opencl-icd
-    - name: Install clinfo
-      run: sudo apt install clinfo
-    - name: Check OpenCL Install
-      run: clinfo
+      run: sudo apt install  ocl-icd-opencl-dev pocl-opencl-icd
     - name: Build 
       run: cargo build -vv
     - name: Test
