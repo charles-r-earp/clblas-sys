@@ -1,0 +1,18 @@
+[package]
+name = "clblas-sys"
+version = "0.0.1"
+authors = ["charles-r-earp <charles.r.earp@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cl-sys = "0.4.2"
+libc = "0.2.71"
+
+[build-dependencies]
+bindgen = "0.54.1"
+cmake = "0.1.44"
+
+[dev-dependencies]
+ocl = "0.19.3"
