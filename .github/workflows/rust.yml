@@ -19,7 +19,7 @@ jobs:
       with: 
         submodules: recursive
     - name: Install OpenCL
-      run: sudo apt install mesa-opencl-icd
+      run: sudo apt install pocl-opencl-icd
     - name: Locate OpenCL
       run: locate libOpenCL.so
     - name: Build 
