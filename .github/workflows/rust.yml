@@ -20,6 +20,8 @@ jobs:
         submodules: recursive
     - name: Install OpenCL
       run: sudo apt install mesa-opencl-icd
+    - name: Locate OpenCL
+      run: locate libOpenCL.so
     - name: Build 
       run: cargo build -vv
     - name: Test
