@@ -7,7 +7,6 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-cl-sys = "0.4.2"
 libc = "0.2.71"
 
 [build-dependencies]
